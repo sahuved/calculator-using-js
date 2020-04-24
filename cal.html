@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculater</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style type="text/css">
+	body{
+		
+		background-image:url(45.jpg);
+		background-repeat:no-repeat;
+		background-size: cover;
+		 font-family: Impact, Charcoal, sans-serif;
+	}
+
+input{
+
+	text-decoration: none;
+	border:2px solid white ;
+	background-color: white;
+	color: white;
+	background-color:transparent;
+	color:black;
+	font-size:30px;
+
+
+}
+
+.forms{
+	
+	width: 400px;
+	height: 400px;
+	margin:auto;
+
+}
+.bg:hover{
+border:2px solid #ffff00;
+}
+
+.bb:hover{
+	
+	border:2px solid #b200f4;
+}
+.bbc:hover{
+	border:2px solid #9bf400;
+}
+
+.bbd:hover{
+	border:2px solid #ff009e;
+}
+</style>
+
+
+
+<body>
+	<h1 style="color: white;font-size:40px;font-weight: bolder;text-align: center;font-family: Arial, Helvetica, sans-serif;">THIS IS A CALCULATOR </h1>
+<div class="forms">
+	<form >
+		<input style=" height: 50px;margin-top:10%;width: 100%;font-size: 30px;font-weight: bolder;color: black;" class="bg" type="text" name="answer"><br></br>
+		<input style="height: 40px;width: 130px;" class="bb" type="button" value=" 1 " onclick="form.answer.value +='1' ">
+		<input  style="height: 40px;width: 130px;"  class="bb" type="button" value=" 2 " onclick="form.answer.value +='2' ">
+		<input  style="height: 40px;width: 130px;"  class="bb" type="button" value=" 3 " onclick="form.answer.value +='3' ">
+		<br><br>
+		<input  style="height: 40px;width: 130px;"  class="bb" type="button" value=" 4 " onclick="form.answer.value +='4' ">
+		<input  style="height: 40px;width: 130px;"  class="bb" type="button" value=" 5 " onclick="form.answer.value +='5' ">
+		<input   style="height: 40px;width: 130px;"   class="bb" type="button" value=" 6 " onclick="form.answer.value +='6' ">
+		<br><br>
+		<input   style="height: 40px;width: 130px;"   class="bb" type="button" value=" 7 " onclick="form.answer.value +='7' ">
+		<input   style="height: 40px;width: 130px;"   class="bb" type="button" value=" 8 " onclick="form.answer.value +='8' ">
+		<input   style="height: 40px;width: 130px;"   class="bb" type="button" value=" 9 " onclick="form.answer.value +='9' ">
+		<br><br>
+		<input   style="height: 40px;width: 130px;"   class="bb" type="button" value=" + " onclick="form.answer.value +='+' ">
+		<input   style="height: 40px;width: 130px;"   class="bb" type="button" value=" - " onclick="form.answer.value +='-' ">
+		<input   style="height: 40px;width: 130px;"   class="bb" type="button" value=" * " onclick="form.answer.value +='*' ">
+		<br><br>
+		<input   style="height: 40px;width: 110px;"   class="bb" type="button" value=" / " onclick="form.answer.value +='/' ">
+		<input   style="height: 40px;width: 110px;"   class="bb" type="button" value=" 0 " onclick="form.answer.value +='0' ">
+		<input   style="height: 40px;width: 170px;"   class="bbd" type="button" value=" = " onclick="form.answer.value =eval(form.answer.value) "><br><br>
+		<input   style="height: 50px;width: 100%;"   class="bbc" type="button" id="clear" value="Clear All" onclick="form.answer.value=' ' ">
+	</form>
+</div>
+</body>
+</html>
